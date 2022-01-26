@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Praktikum Tugas 6.2 Aditya SI15 | Flexbox Grid</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="shortcut icon" href="img/logoadit.png">
+ <style type="text/css" id="dcoder_stylesheet">* {
+ box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav {
+  background: pink;
+  flex: 0 0 30vh;
+  flex-direction: row;
+  text-align: center;
+}
+
+.adit {
+  display: flex;
+  flex-direction: column;
+}
+
+.ditt {
+  display: flex;
+  flex: 1;
+}
+
+.ditt>article {
+  flex: 1;
+  order: 1;
+  flex: 0 0 148vh;
+}
+
+.ditt>aside {
+  flex: 0 0 30vh;
+  background: cyan;
+  order: 2;
+}
+
+header, footer {
+  background: khaki;
+  height: 20vh;
+  width: 178vh;
+}
+
+nav, header, article, aside, footer {
+  padding: 1em;
+}</style></head> 
+ <body> 
+  <nav> 
+   <b>Nav</b> 
+  </nav> 
+  <div class="adit"> 
+   <header> 
+    <b>Header</b> 
+   </header> 
+   <div class="ditt"> 
+    <article> 
+     <b>Article</b> 
+    </article> 
+    <aside> 
+     <b>Aside</b> 
+    </aside> 
+   </div> 
+   <div> 
+    <footer> 
+     <b>Footer</b> 
+    </footer> 
+   </div> 
+  </div> 
+</body>
+</html>

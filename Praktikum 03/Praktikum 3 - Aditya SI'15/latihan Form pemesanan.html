@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <title>Form Login</title> 
+  <link rel="shortcut icon" href="img/logoadit.png">
+ </head> 
+ <body> 
+  <fieldset style="background-color: lightblue;text-align: leaf:"> 
+   <h1><center>FORM PEMESANAN</center></h1> 
+   <p><center>Pizza delivery</center></p>
+   <p></p> <!-- Membuat input dengan tipe teks --> 
+   <form method="POST" action="login.php"> 
+    <h2> <legend>Costumer name</legend> </h2> 
+    <br> 
+    <div> <label> Name : <input type="text" name="Name"> <br> Address : <input type="text" name="Addrees"> <br> No.Hp : <input type="number" name="No.Hp"> <br> Email : <input type="text" name="email"> </label> 
+    </div> Delivery instructions: 
+    <div> <textarea name="Delivery instructions:" cols="40" rows="3"></textarea> 
+    </div> 
+    <br> 
+    <h2> Your Order </h2> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="0"> <label for="vehicle1"> Classic white</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="multigrain"> <label for="vehicle2"> Multigrain</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="cheese-stuffed crust"> <label for="vehicle3"> Cheese-stuffed crust</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="Gluten-free"> <label for="vehicle4"> Gluten-free</label> 
+    <br> 
+    <br> 
+    <h2> Toppings </h2> 
+    <br> 
+    <input type="checkbox" id="vehicle1" name="vehicle" value="Red sauce"> <label for="vehicle1"> Red sauce</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="White sauce"> <label for="vehicle2"> White sauce</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="Mozzarella Cheese"> <label for="vehicle3"> Mozzarella Cheese</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="Pepperoni"> <label for="vehicle4"> Pepperoni</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="Mushroooms"> <label for="vehicle5"> Mushrooms</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="Peppers"> <label for="vehicle6"> Peppers</label> 
+    <br> 
+    <input type="checkbox" id="vehiclel" name="vehicle" value="Anchovies"> <label for="vehicle7"> Anchovies</label> 
+    <br> 
+    <br> Number 
+    <br> <label>How many pizzas: <input type="number" name="pizzas" min="0" max="1000"></label> 
+    <br> 
+    <p><input type="Submit" value="Kirim"> <input type="Reset" value="Batal"></p> 
+   </form> 
+  </fieldset> 
+</body>
+</html>

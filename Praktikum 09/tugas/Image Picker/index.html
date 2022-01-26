@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 9 Image Picker | Aditya SI15</title>
+    <link rel="shortcut icon" href="img/logoadit.png">
+</head>
+<body>
+    <label for="Hewan">Hewan</label>
+    <select id="Hewan" onchange="cetakGambar()">
+       <option value="Singa">Singa</option>
+       <option value="Harimau">Harimau</option>
+       <option value="Macan Tutul">Macan Tutul</option>
+       <option value="Kucing">Kucing</option>
+    </select>
+    <img src="" id="gambar">
+    <script>
+       function cetakGambar() {
+           const Hewan = document.getElementById("Hewan");
+           const gambar = document.getElementById("gambar");
+           if (Hewan.value === "Singa") {
+               gambar.src = "singa.jpg"
+           }
+           if (Hewan.value === "Harimau") {
+               gambar.src = "harimau.jpg" 
+           }
+           if (Hewan.value === "Macan Tutul") {
+               gambar.src = "macan tutul.jpg"
+           }
+           if (Hewan.value === "Kucing") {
+               gambar.src = "kucing.jpg"
+           }
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function hitung() {
+            const dollar = 14650; // konstanta
+            let rupiah = document.getElementById("rupiah").value;
+            console.log("Rupiah : Rp." + rupiah);
+            let hasil_dollar = rupiah / dollar
+            console.log("Dollar : $ zazaa" + hasil_dollar);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "  $" + hasil_dollar;   
+        }
+    
+    </script>
+    <title>Tugas 8 Kurs Rupiah | Aditya SI15</title>
+    <link rel="shortcut icon" href="img/logoadit.png">
+</head>
+<body>
+     <h3>MENGHITUNG KURS RUPIAH</h3>
+         Masukan jumlah rupiah :
+     <input type="number" value="" size="10" id="rupiah">
+     <br />
+     <button onclick="hitung()">Hitung</button>
+     <br />Dalam Dollar : <span id="hasil"></span>
+</body>
+</html>
